@@ -24,11 +24,6 @@ function getUiUrl() {
 // ─────────────────────────────────────────────────────────────────
 
 const GOOSE_LOGO = [
-  '       __       ',
-  '   ___( o)>     ',
-  '   \\ <_. )      ',
-  '    `---\'       ',
-  '                ',
   '   __________  ____  _____ ______________  _______ _________  __________  ____ ',
   '  / ____/ __ \\/ __ \\/ ___// ____/ ____/ / / / ___// ____/   |/_  __/ __ \\/ __ \\',
   ' / / __/ / / / / / /\\__ \\/ __/ / /_  / / / /\\__ \\/ /   / /| | / / / / / / /_/ /',
@@ -90,15 +85,15 @@ function makeGooseWatermark() {
   lines.push(emptyBoxLine());
 
   // Branding
-  lines.push(boxLine(center('<[ PROTECTED BY GOOSEFUSCATOR ]>', W)));
-  lines.push(boxLine(center('/// Best Obfuscator \\\\\\', W)));
+  lines.push(boxLine(center('<protected by goosefuscator>', W)));
+  lines.push(boxLine(center(' definitely best obfuscator \\\\\\', W)));
   lines.push(emptyBoxLine());
 
   // Session info
   lines.push('||  ' + center(borderInner, W) + '  ||');
   lines.push(emptyBoxLine());
-  lines.push(boxLine('    [+] Session Fingerprint : ' + sid));
-  lines.push(boxLine('    [+] Deployment Time     : ' + ts));
+  lines.push(boxLine('    fingerprint : ' + sid));
+  lines.push(boxLine('    deployment Time     : ' + ts));
   lines.push(emptyBoxLine());
   lines.push('||  ' + center(borderInner, W) + '  ||');
   lines.push(emptyBoxLine());
@@ -123,12 +118,12 @@ function makeGooseFooter() {
     border,
     fPad(''),
     fCenter('Goosefuscator'),
-    fCenter('--- Best Lua Obfuscator ---'),
+    fCenter('best lua obfuscator'),
     fPad(''),
     '||  ' + inner + '  ||',
-    fPad('  Build   : ' + sid),
+    fPad('  build   : ' + sid),
     fPad(''),
-    fCenter('Protected  *  Unique  *  Secure'),
+    fCenter('yeah prob best obf'),
     fPad(''),
     border,
   ];
